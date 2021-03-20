@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 import sys
 import ldap
 
@@ -8,7 +10,7 @@ un = "wachira"
 server = "ldap://172.20.0.6"
 port = 389
 
-base = "DC=meanet,DC=mea,DC=or,DC=th"
+base = "DC=testnet,DC=example,DC=or,DC=th"
 scope = ldap.SCOPE_SUBTREE
 filter = "(&(objectClass=user)(sAMAccountName=" + un + "))"
 attrs = ["*"]
